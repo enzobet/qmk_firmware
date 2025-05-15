@@ -62,7 +62,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |------+------+------+------+------+------|                |------+------+------+------+------+------|
      * | TAB  |   A  |   S  |   H  |   T  |   G  |                |   Y  |   N  |   E  |   O  |   I  |   '  |
      * |------+------+------+------+------+------|                |------+------+------+------+------+------|
-     * |LSHIFT|   Z  |   X  |   M  |   C  |   V  |                |  K   |   L  |   ,  |   .  |   /  |  ESC |
+     * |LSHIFT|   Z  |   X  |   M  |   C  |   V  |                |   K  |   L  |   ,  |   .  |   /  |  ESC |
      * `-----------------------------------------|                `-----------------------------------------|
      *                           | LGUI |LOWER | Space |           | Enter | RAISE | RGUI |
      *                           `---------------------'           '----------------------'
@@ -72,7 +72,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_ESC, KC_Q, KC_D, KC_R, KC_W, KC_B,                                           KC_J, KC_F, KC_U, KC_P, KC_SCLN, KC_BSPC,
         KC_TAB, LGUI_T(KC_A), LALT_T(KC_S), LSFT_T(KC_H), LCTL_T(KC_T), KC_G,           KC_Y, RCTL_T(KC_N), RSFT_T(KC_E), RALT_T(KC_O), RGUI_T(KC_I), KC_QUOT,
         KC_LSFT, KC_Z, KC_X, KC_M, KC_C, KC_V,                                          KC_K, KC_L, KC_COMM, KC_DOT, KC_SLSH, KC_ESC,
-        KC_LGUI, MO(2), HYPR_T(KC_SPC),                                                 KC_ENT, MO(3), KC_RALT
+        KC_LGUI, MO(2), KC_ENT,                                                 HYPR_T(KC_SPC), MO(3), KC_RALT
     ),
 
     [_LOWER] = LAYOUT_split_3x6_3(
